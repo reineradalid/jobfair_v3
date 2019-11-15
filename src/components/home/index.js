@@ -3,11 +3,8 @@ import Nav from '../common/nav/nav'
 import Head from './header/index'
 import Logos from './logoList'
 import HowItWorks from './howitWorks'
+import Footer from '../common/footer/index'
 class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     render() { 
         return ( 
             <div>
@@ -15,6 +12,7 @@ class Home extends Component {
                 <Head/>
                 <Logos/>
                 <HowItWorks/>
+                <Footer/>
             </div>
          );
     }
