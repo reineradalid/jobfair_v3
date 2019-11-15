@@ -21,3 +21,28 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+.navContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navLinks{
+  display: flex;
+  width:35% ;
+  justify-content: space-around;
+}
+
+.navLinks li{
+  list-style: none;
+  font-weight: bold;
+ 
+}
+.navLinks a{
+  font-size: 15px;
+}
+
+
+
+
