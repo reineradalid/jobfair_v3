@@ -11,7 +11,7 @@ class Counter extends Component {
                            <h2 style={{color:"#fff"}}>Sep 27, 2019</h2>
                         </div>
                     </Col>
-                    <Col xl={{span:8}}   className="try" style={{margin:15}} >
+                    <Col xl={{span:12}}   className="try" style={{margin:15}} >
                             <Col span={6}>
                                 <div align="center" className="gutter-box" style={{justifyContent:'center', alignItems:"center"}}>
                                     <h1 style={{color:"#fff"}}>{this.props.cdata.days}</h1>

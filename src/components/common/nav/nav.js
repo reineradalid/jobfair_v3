@@ -10,10 +10,10 @@ class Nav extends Component {
             <div style={{height:"15vh", }}>
                 <div>
                     <div align="right" style={{display:"flex", flexDirection:"row-reverse",paddingTop:6,paddingRight:53, fontWeight:"bold"}}>
-                        <a style={{color:"#fff",margin:6, backgroundColor:"blue", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
+                        <a role="button" style={{color:"#fff",margin:6, backgroundColor:"#377ccc", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
                            SIGN UP
                         </a>
-                        <a style={{color:"#fff",margin:6, backgroundColor:"blue", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
+                        <a role="button" style={{color:"#fff",margin:6, backgroundColor:"#377ccc", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
                             LOGIN
                         </a>
                     </div >
