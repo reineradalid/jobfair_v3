@@ -22,16 +22,19 @@ class HowItWorks extends Component {
                             </video>
                         </div>
                     </Col>
-                    <Col    span={12}>
-                        <h2>Employer</h2>
+                    <Col   align="center"  span={12}>
+                        <h1>Employer</h1>
+                        <h2>Some text missing</h2>
+                        
                     </Col>
                 </Row>
                 <div style={{height:"25vh"}}/>
                 <Row justify="center" align="top" type="flex" style={{minHeight:"30vh"}}>
-                    <Col  span={12}>
-                        <h2>Jobseeker</h2>
+                    <Col align="center" span={12}>
+                        <h1>Jobseeker</h1>
+                        <h2>Some text missing</h2>
                     </Col>
-                    <Col span={12}>
+                    <Col  align="center" span={12}>
                         <div style={{maxWidth:"600px"}} >
                             <video  style={{borderRadius:12}}  width="100%"  controls>
                                 <source src={Signup} type="video/mp4"/>

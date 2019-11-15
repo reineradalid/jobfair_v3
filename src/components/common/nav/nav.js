@@ -7,13 +7,13 @@ class Nav extends Component {
     }
     render() { 
         return ( 
-            <div style={{height:"15vh", }}>
+            <div style={{height:"15vh" }}>
                 <div>
                     <div align="right" style={{display:"flex", flexDirection:"row-reverse",paddingTop:6,paddingRight:53, fontWeight:"bold"}}>
-                        <a role="button" style={{color:"#fff",margin:6, backgroundColor:"#377ccc", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
+                        <a href="https://www.jobstreamapp.com/signup" role="button" style={{color:"#fff",margin:6, backgroundColor:"#f26725", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
                            SIGN UP
                         </a>
-                        <a role="button" style={{color:"#fff",margin:6, backgroundColor:"#377ccc", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
+                        <a role="button" style={{color:"#fff",margin:6, backgroundColor:"#f26725", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
                             LOGIN
                         </a>
                     </div >
@@ -21,7 +21,6 @@ class Nav extends Component {
                         <div>
                             <img style={{maxWidth:150}} src={logo} alt={logo} />
                         </div>
-                       
                         <ul className="navLinks">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li> 
