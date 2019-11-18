@@ -6,8 +6,10 @@ const { Search } = Input;
 class Head extends Component {
     render() { 
         return ( 
-            <div style={{
-                    minHeight:"75vh", 
+            <div
+            className="header-cntn"
+            style={{
+                   
                     display:'flex', 
                     flexDirection:"column",
                     alignItems:"center", 
@@ -17,10 +19,11 @@ class Head extends Component {
                 <h1 style={{color:"#fff", fontSize:40}}>Online Jobfair</h1>
                 <div style={{padding:10, backgroundColor:"#f26725", borderRadius:5}}>
                 <Search
+                    className="search"
                     size="large"
                     placeholder="Search (e.g job title,description,company name,location)"
                     onSearch={value => console.log(value)}
-                    style={{ width: 500 }}
+                    
                     />
                 </div>
                 <div style={{width:"100%"}}>

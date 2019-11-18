@@ -10,13 +10,14 @@ const { Header, Sider, Content } = Layout;
 class Home extends Component {
     state = {
         color: '0,0,0,0',
-        textcolor: '255,255,255'
+        textcolor: '255,255,255',
+        burger:'255,255,255'
       }
     listenScrollEvent = e => {
         if (window.scrollY > 150) {
-          this.setState({color: '255,255,255', textcolor:'55, 124, 204'})
+          this.setState({color: '255,255,255,0.5', textcolor:'55, 124, 204',burger:"136,136,136"})
         } else {
-          this.setState({color: '0,0,0,0',textcolor: '255,255,255'})
+          this.setState({color: '0,0,0,0',textcolor: '255,255,255',burger:"255,255,255"})
         }
       }
     
@@ -27,7 +28,9 @@ class Home extends Component {
         return ( 
             <Layout>
                
-                <div style={{
+                <div
+                
+                 style={{
                     backgroundPosition:"center",
                     backgroundSize:"cover",
                     // clipPath:"ellipse(95% 100% at 49.5% 0%)",
@@ -47,13 +50,12 @@ class Home extends Component {
                             height:"15vh",
                             right:0, 
                             left:0}}>
-                        <Nav color={this.state.textcolor}/>
+                        <Nav color={this.state.textcolor} burger={this.state.burger}/>
                     </Header>
                     <Head/>
                 </div>
                 <Logos/>
                 <HowItWorks/>
-              
                 <Footer/>
             </Layout>
          );
