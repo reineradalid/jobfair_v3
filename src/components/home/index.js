@@ -31,23 +31,21 @@ class Home extends Component {
                     backgroundSize:"cover",
                     // clipPath:"ellipse(95% 100% at 49.5% 0%)",
                     backgroundImage:`
-                        linear-gradient(rgba(55,124,204,0.9),
+                        linear-gradient(rgba(55,124,204,0.8),
                         rgba(26,60,107,0.4)),
                         url(https://i0.wp.com/arielle.com.au/wp-content/uploads/2017/09/guide-to-finding-meaningful-work.jpg)`
-                       
-                }}>
+                    }}>
                     <Header
-                    className="header"
-                    style={{
-                        backgroundColor:`rgba(${this.state.color})`,
-                        position:"fixed",
-                        with:"100%",
-                        paddingBottom:10,
-                        zIndex:1000,
-                        top:0,
-                        height:"15vh",
-                        right:0, 
-                        left:0}}>
+                        className="header"
+                        style={{
+                            backgroundColor:`rgba(${this.state.color})`,
+                            position:"fixed",
+                            with:"100%",
+                            zIndex:1000,
+                            top:0,
+                            height:"15vh",
+                            right:0, 
+                            left:0}}>
                         <Nav/>
                     </Header>
                     <Head/>
