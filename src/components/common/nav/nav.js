@@ -3,20 +3,7 @@ import logo from '../../../assets/image/logo.png'
 import {Modal} from 'antd' 
 class Nav extends Component {
     state = {
-        color: '255,255,255',
-        visble:false
-      }
-    listenScrollEvent = e => {
-        if (window.scrollY > 150) {
-          this.setState({color:'55, 124, 204' })
-          
-        } else {
-          this.setState({color: '255,255,255'})
-        }
-      }
-    
-      componentDidMount() {
-        window.addEventListener('scroll', this.listenScrollEvent)
+        visble:false,
       }
     render() { 
         return ( 
@@ -35,10 +22,10 @@ class Nav extends Component {
                             <img style={{maxWidth:150}} src={logo} alt={logo} />
                         </div>
                         <ul className="navLinks">
-                            <li><a style={{color:`rgba(${this.state.color})`}} href="#">Home</a></li>
-                            <li><a style={{color:`rgba(${this.state.color})`}} href="#">About</a></li> 
-                            <li><a style={{color:`rgba(${this.state.color})`}} href="#">FAQ</a></li>
-                            <li><a style={{color:`rgba(${this.state.color})`}} href="#">Contact</a></li>
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">Home</a></li>
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">About</a></li> 
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">FAQ</a></li>
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>

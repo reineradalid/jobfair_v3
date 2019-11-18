@@ -4,10 +4,6 @@ import Signup from '../../assets/image/Signup.mp4'
 const { Step } = Steps;
 
 class HowItWorks extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     render() { 
         return ( 
             <div align="center"  style={{minHeight:"20vh", marginTop:30, marginBottom:100}}>

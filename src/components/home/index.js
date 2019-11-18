@@ -9,13 +9,14 @@ import { Layout } from 'antd';
 const { Header, Sider, Content } = Layout;
 class Home extends Component {
     state = {
-        color: '0,0,0,0'
+        color: '0,0,0,0',
+        textcolor: '255,255,255'
       }
     listenScrollEvent = e => {
         if (window.scrollY > 150) {
-          this.setState({color: '255,255,255'})
+          this.setState({color: '255,255,255', textcolor:'55, 124, 204'})
         } else {
-          this.setState({color: '0,0,0,0'})
+          this.setState({color: '0,0,0,0',textcolor: '255,255,255'})
         }
       }
     
@@ -46,7 +47,7 @@ class Home extends Component {
                             height:"15vh",
                             right:0, 
                             left:0}}>
-                        <Nav/>
+                        <Nav color={this.state.textcolor}/>
                     </Header>
                     <Head/>
                 </div>

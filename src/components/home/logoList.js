@@ -21,5 +21,4 @@ class Logos extends Component {
          );
     }
 }
- 
 export default Logos;

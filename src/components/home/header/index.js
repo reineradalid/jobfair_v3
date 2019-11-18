@@ -4,10 +4,6 @@ import {Input} from 'antd'
 
 const { Search } = Input;
 class Head extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     render() { 
         return ( 
             <div style={{
