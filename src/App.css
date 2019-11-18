@@ -72,7 +72,7 @@
   font-size: 15px;
   color: white;
 }
-.footer-links:hover{
+.footer-links a:hover{
   color:"#f26725"
 }
 .header{

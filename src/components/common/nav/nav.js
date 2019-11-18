@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import logo from '../../../assets/image/logo.png'
-import {Modal, Icon,Row,Col} from 'antd' 
+import {Modal, Icon,Row,Col, Drawer} from 'antd' 
 import { Responsive, Segment } from 'semantic-ui-react'
 
 
 class Nav extends Component {
     state = {
         visble:false,
+        drawerVisible:false
       }
     render() { 
         return ( 
@@ -38,7 +39,7 @@ class Nav extends Component {
               <div style={{paddingTop:30}}>
                   <Row justify="center" type="flex" align="middle" style={{width:"100%", height:"100%"}}>
                     <Col xs={{span:3}} sm={{span:5}}  md={{span:5}}>
-                      <a onClick={()=>console.log("sasd")} style={{color:`rgba(${this.props.burger})`}}>
+                      <a onClick={()=>this.setState({drawerVisible:true})} style={{color:`rgba(${this.props.burger})`}}>
                         <Icon style={{fontSize:20, fontWeight:"bold"}} type="menu"/>
                       </a>
                     </Col>
@@ -55,7 +56,7 @@ class Nav extends Component {
                 <div style={{paddingTop:30}}>
                   <Row justify="center" type="flex" align="middle" style={{width:"100%", height:"100%"}}>
                     <Col xs={{span:3}} sm={{span:5}}  md={{span:5}}>
-                      <a onClick={()=>console.log("sasd")} style={{color:`rgba(${this.props.burger})`}}>
+                      <a onClick={()=>this.setState({drawerVisible:true})} style={{color:`rgba(${this.props.burger})`}}>
                         <Icon style={{fontSize:20, fontWeight:"bold"}} type="menu"/>
                       </a>
                     </Col>
@@ -76,9 +77,119 @@ class Nav extends Component {
                   title={<small>Log in</small>}
                   >
                 </Modal>
+
+
+                <Drawer
+                    title={ <img style={{maxWidth:200,}} src={logo} alt={logo} /> }
+                    placement="left"
+                    closable={false}
+                    onClose={()=>this.setState({drawerVisible:false})}
+                    visible={this.state.drawerVisible}
+                  >
+                    
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="#"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="user"/>
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Login
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="#"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="user-add"  />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Sign Up
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="#"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="home" theme="filled" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Home
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="#"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="info-circle" theme="filled" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                About
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="#"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="safety-certificate" theme="filled" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Privacy Policy
+                              </p>
+                        </a>
+                      </li>
+              </Drawer>
             </div>
          );
     }
+
 }
+
+const links= [
+  {
+    name:"Login",
+    icon:"home",
+    link:"/"
+  },
+  {
+    name:"Sign Up",
+    icon:"home",
+    link:"/"
+  },
+  {
+    name:"Home",
+    icon:"home",
+    link:"/"
+  },
+  {
+    name:"About",
+    icon:"home",
+    link:"/"
+  },
+  {
+    name:"Terms and Agreement",
+    icon:"home",
+    link:"/"
+  },
+  {
+    name:"Privacy policy",
+    icon:"home",
+    link:"/"
+  }
+]
  
 export default Nav;
