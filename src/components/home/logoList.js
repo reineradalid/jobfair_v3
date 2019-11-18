@@ -10,12 +10,12 @@ class Logos extends Component {
             <div align="center" 
                 style={{
                     height:"28vh",
-                    paddingTop:20, 
+                    paddingTop:"3vh", 
                     backgroundSize:"cover",
                     backgroundColor:"#eee"
                     // backgroundImage:`url(https://www.maryfreebed.com/wp-content/uploads/2014/12/Mary-Free-Bed-Rehabilitation-Hospital-Textured-Background-Orange-gradient.jpg)`
                     }}>
-                <h2>Some text missing by Companies:</h2>
+                    <h2>Some text missing by Companies:</h2>
                 <></>
             </div>
          );

@@ -32,7 +32,7 @@
   display: flex;
   width:35% ;
   justify-content: space-around;
-  transition: 0.3s;
+  /* transition: 10s; */
 }
 
 .navLinks li{
@@ -76,7 +76,7 @@
 
 }
 .header{
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 

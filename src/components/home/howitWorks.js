@@ -6,7 +6,7 @@ const { Step } = Steps;
 class HowItWorks extends Component {
     render() { 
         return ( 
-            <div align="center"  style={{minHeight:"20vh", marginTop:30, marginBottom:100}}>
+            <div align="center"  style={{minHeight:"20vh", marginTop:"10vh", marginBottom:100}}>
                 <div  align="center"  style={{minHeight:"5vh", display:"flex",flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                     <h1>How it works</h1>
                     <p style={{color:"#888"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> Lorem Ipsum has been the industry's </p>
