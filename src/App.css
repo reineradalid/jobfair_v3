@@ -32,6 +32,7 @@
   display: flex;
   width:35% ;
   justify-content: space-around;
+  transition: 0.3s;
 }
 
 .navLinks li{
@@ -41,7 +42,6 @@
 }
 .navLinks a{
   font-size: 15px;
-  color: white;
 }
 .footer-link li{
   list-style: none;
@@ -74,6 +74,9 @@
   font-size: 15px;
   color: white;
 
+}
+.header{
+  transition: 0.3s;
 }
 
 

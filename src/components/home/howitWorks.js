@@ -10,11 +10,13 @@ class HowItWorks extends Component {
     }
     render() { 
         return ( 
-            <div style={{minHeight:"20vh", marginTop:30, marginBottom:100}}>
-                <div  align="center"  style={{minHeight:"5vh", backgroundColor:"#f26725", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                    <h2 style={{color:"#fff"}}>How it works</h2>
+            <div align="center"  style={{minHeight:"20vh", marginTop:30, marginBottom:100}}>
+                <div  align="center"  style={{minHeight:"5vh", display:"flex",flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+                    <h1>How does it works</h1>
+                    <p style={{color:"#888"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> Lorem Ipsum has been the industry's </p>
                 </div>
-                <Row justify="center" gutter={8}  align="top" type="flex" style={{minHeight:"30vh", paddingTop:100}}>
+                <Row justify="center" gutter={32}  align="top" type="flex" style={{minHeight:"30vh", paddingTop:100, maxWidth:"80vw"}}>
+                    
                     <Col align="center" span={12}>
                         <div style={{maxWidth:"600px", borderRadius:12}} >
                             <video width="100%" style={{borderRadius:12}}  controls>
@@ -24,19 +26,19 @@ class HowItWorks extends Component {
                     </Col>
                     <Col   align="center"  span={12}>
                         <h1>Employer</h1>
-                        <h2>Some text missing</h2>
+                        <h3 style={{color:"#888"}}>Lorem Ipsum is simply dummy text of the  printing<br/> and typesetting industry. Lorem</h3>
                         
                     </Col>
                 </Row>
                 <div style={{height:"25vh"}}/>
-                <Row justify="center" align="top" type="flex" style={{minHeight:"30vh"}}>
-                    <Col align="center" span={12}>
-                        <h1>Jobseeker</h1>
-                        <h2>Some text missing</h2>
+                <Row justify="center" gutter={32}  align="top" type="flex" style={{minHeight:"30vh", paddingTop:100, maxWidth:"80vw"}}>
+                    <Col   align="center"  span={12}>
+                        <h1>Employer</h1>
+                        <h3 style={{color:"#888"}}>Lorem Ipsum is simply dummy text of the  printing<br/> and typesetting industry. Lorem</h3>
                     </Col>
-                    <Col  align="center" span={12}>
-                        <div style={{maxWidth:"600px"}} >
-                            <video  style={{borderRadius:12}}  width="100%"  controls>
+                    <Col align="center" span={12}>
+                        <div style={{maxWidth:"600px", borderRadius:12}} >
+                            <video width="100%" style={{borderRadius:12}}  controls>
                                 <source src={Signup} type="video/mp4"/>
                             </video>
                         </div>

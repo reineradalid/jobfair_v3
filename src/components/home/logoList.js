@@ -7,8 +7,15 @@ class Logos extends Component {
     }
     render() { 
         return ( 
-            <div style={{height:"20vh"}}>
-
+            <div align="center" 
+                style={{
+                    height:"28vh",
+                    paddingTop:20, 
+                    backgroundSize:"cover",
+                    backgroundColor:"#eee"
+                    // backgroundImage:`url(https://www.maryfreebed.com/wp-content/uploads/2014/12/Mary-Free-Bed-Rehabilitation-Hospital-Textured-Background-Orange-gradient.jpg)`
+                    }}>
+                <h2>Some text missing by Companies:</h2>
             </div>
          );
     }
