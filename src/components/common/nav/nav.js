@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import logo from '../../../assets/image/logo.png'
 import {Modal, Icon,Row,Col} from 'antd' 
-
 import { Responsive, Segment } from 'semantic-ui-react'
+
+
 class Nav extends Component {
     state = {
         visble:false,
