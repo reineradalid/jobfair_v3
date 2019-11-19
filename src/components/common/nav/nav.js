@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../../../assets/image/logo.png'
+import logo2 from '../../../assets/image/Icon-design-registered.png'
 import {Modal, Icon,Row,Col, Drawer} from 'antd' 
 import { Responsive, Segment } from 'semantic-ui-react'
 import {
@@ -30,13 +31,14 @@ class Nav extends Component {
                     </div >
                     <div className="navContainer" style={{display:"flex", flexDirection:"row", paddingTop:10}}>
                         <div>
-                            <img style={{maxWidth:150}} src={logo} alt={logo} />
+                        <a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:150}} src={logo} alt={logo} /></a>
                         </div>
                         <ul className="navLinks">
                             <li> <Link  style={{color:`rgba(${this.props.color})`}} to="/">Home</Link></li>
                             <li><Link  style={{color:`rgba(${this.props.color})`}} to="/about">About</Link></li> 
                             <li><Link style={{color:`rgba(${this.props.color})`}} to="/faq">FAQ</Link></li>
-                            <li><Link style={{color:`rgba(${this.props.color})`}} to="#">Contact</Link></li>
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com/contactus">Contact</a></li>
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com"><span style={{color:"#f26725"}}>Job</span>Stream</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,13 +46,13 @@ class Nav extends Component {
               <Responsive {...Responsive.onlyMobile}>
               <div style={{paddingTop:30}}>
                   <Row justify="center" type="flex" align="middle" style={{width:"100%", height:"100%"}}>
-                    <Col xs={{span:3}} sm={{span:5}}  md={{span:5}}>
+                    <Col xs={{span:2}} sm={{span:5}}  md={{span:5}}>
                       <a onClick={()=>this.setState({drawerVisible:true})} style={{color:`rgba(${this.props.burger})`}}>
                         <Icon style={{fontSize:20, fontWeight:"bold"}} type="menu"/>
                       </a>
                     </Col>
                     <Col xs={{span:19}}  sm={{span:15}} md={{span:14}}>
-                      <img style={{maxWidth:200, marginLeft:30, marginRight:30}} src={logo} alt={logo} /> 
+                    <a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:200, marginLeft:30, marginRight:30}} src={logo} alt={logo} /> </a>
                     </Col>
                     <Col xs={{span:2}}  sm={{span:4}} md={{span:5}}>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTG1troYX9mXKSRKLOwbyC5lRFzQ4Vzvu_-HLrhTtaqB004zyvn" style={{maxWidth:20}} />
@@ -67,7 +69,7 @@ class Nav extends Component {
                       </a>
                     </Col>
                     <Col xs={{span:19}}  sm={{span:15}} md={{span:14}}>
-                      <img style={{maxWidth:250, marginLeft:30, marginRight:30}} src={logo} alt={logo} /> 
+                    <a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:250, marginLeft:30, marginRight:30}} src={logo} alt={logo} /> </a>
                     </Col>
                     <Col xs={{span:2}}  sm={{span:4}} md={{span:5}}>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTG1troYX9mXKSRKLOwbyC5lRFzQ4Vzvu_-HLrhTtaqB004zyvn" style={{maxWidth:20}} />
@@ -86,13 +88,25 @@ class Nav extends Component {
 
 
                 <Drawer
-                    title={ <img style={{maxWidth:200,}} src={logo} alt={logo} /> }
+                    title={<a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:200,}} src={logo} alt={logo} /> </a>}
                     placement="left"
                     closable={false}
                     onClose={()=>this.setState({drawerVisible:false})}
                     visible={this.state.drawerVisible}
                   >
-                    
+                     <li align="center" style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="https://www.jobstreamapp.com/"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                             <img style={{maxWidth:20}} src={logo2} alt={logo2} />
+                              <p style={{color:"rgba(55, 124, 204)", marginLeft:20, fontWeight:"bold"}}>
+                              <span style={{color:"#f26725"}}>Job</span>Stream
+                              </p>
+                        </a>
+                      </li>
                       <li style={{listStyle:"none",height:"7vh" }}>
                         <a  href="#"
                             style={{
@@ -159,6 +173,32 @@ class Nav extends Component {
                         </a>
                       </li>
                       <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="https://www.jobstreamapp.com/contactus"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="phone" theme="filled" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Contact Us
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="/faq"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                             <Icon type="bulb" theme="filled" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                FAQ
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
                         <a  href="/safety-tips"
                             style={{
                               display:"flex", 
@@ -184,6 +224,8 @@ class Nav extends Component {
                               </p>
                         </a>
                       </li>
+                     
+                     
               </Drawer>
               {/* safety-tips */}
               {/* Terms&agreement */}

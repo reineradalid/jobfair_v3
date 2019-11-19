@@ -473,12 +473,12 @@ class PrivacyPolicy extends Component {
                         </p>
                         <ol style={{margin:"0cm",marginBottom:".0001pt",textAlign:"justify", fontSize:"16px", listStyleType:"none"}}>
                              If you have any questions about this Privacy Policy, please contact our Privacy Officer by email or postalmail as follows:
-                             <br/>
-                            Attn: Privacy Officer
-                            JobStream App Corporation
-                            2101-1088 6TH AVE SW 
+                             <br/> <br/>
+                            Attn: Privacy Officer <br/>
+                            JobStream App Corporation <br/>
+                            2101-1088 6TH AVE SW  <br/>
                             Calgary, AB T2P5N3
-                            <br/>
+                            <br/> <br/>
                             Email: connect@jobstreamapp.com
                         </ol>
                         <br/><br/><br/>

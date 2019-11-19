@@ -15,7 +15,7 @@ class Home extends Component {
       }
     listenScrollEvent = e => {
         if (window.scrollY > 150) {
-          this.setState({color: '255,255,255,0.5', textcolor:'55, 124, 204',burger:"136,136,136"})
+          this.setState({color: '255,255,255,0.8', textcolor:'55, 124, 204',burger:"136,136,136"})
         } else {
           this.setState({color: '0,0,0,0',textcolor: '255,255,255',burger:"255,255,255"})
         }

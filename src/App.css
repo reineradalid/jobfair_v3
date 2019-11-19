@@ -114,6 +114,7 @@
   font-size: 15PX;
    
  }
+ 
 
 @media only screen and (max-width:768px) {
   .privacy-policy-container{
@@ -156,10 +157,15 @@
   .header-cntn{
     min-height: 100vh !important;
   }
-
-  
   
  
+}
+ @media only screen and (max-width:320px) {
+    .header{
+      height: 20vh;
+    }
+   
+    
 }
 @media only screen and (max-width: 1024px) and (min-width: 800px) {
   .CounterContainer{
