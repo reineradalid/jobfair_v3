@@ -8,26 +8,24 @@ class Head extends Component {
         return ( 
             <div
             className="header-cntn"
-            style={{
-                   
+                style={{
                     display:'flex', 
                     flexDirection:"column",
                     alignItems:"center", 
                     justifyContent:"center",
                     paddingTop:"25vh",
                      }}>
-                <h1 style={{color:"#fff", fontSize:40}}>Online Jobfair</h1>
+                <h1 style={{color:"#fff", fontSize:40}}>ONLINE JOBFAIR</h1>
                 <div style={{padding:10, backgroundColor:"#f26725", borderRadius:5}}>
                 <Search
                     className="search"
                     size="large"
                     placeholder="Search (e.g job title,description,company name,location)"
                     onSearch={value => console.log(value)}
-                    
                     />
                 </div>
                 <div style={{width:"100%"}}>
-                <Counter/>
+                    <Counter/>
                 </div>
             </div>
          );

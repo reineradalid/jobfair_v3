@@ -112,7 +112,7 @@ class PrivacyPolicy extends Component {
                                     <li style={{margin:"0cm",marginBottom:".0001pt",textAlign:"justify", fontSize:"16px"}}>
                                         <span style={{color:"windowtext"}}>
                                             <strong><p>Information collected automatically</p></strong>
-                                            <p>. We automatically collect information from your browser or device when you visit our Service. 
+                                            . We automatically collect information from your browser or device when you visit our Service. 
                                                 This information could include your IP address, device ID and type, your browser type and language, the operating system used by your device,
                                                 access times, your mobile device’s geographic location while our application is actively running, and the referring website address.
                                                 <br/>
@@ -130,7 +130,7 @@ class PrivacyPolicy extends Component {
                                                 </a>). We are using the Maps API(s) in our mobile 
                                                 applications, and incorporated by reference to this Privacy Policy is the Google privacy policy 
                                                 (currently <a  target="_blank" href="http://www.google.com/privacy.html">http://www.google.com/privacy.html</a>)<br/>, as amended by Google from time to time.
-                                            </p>
+                                            
                                         </span>
                                     </li>
                                     <br/>

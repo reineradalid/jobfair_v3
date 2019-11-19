@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 import logo from '../../../assets/image/logo.png'
 import {Modal, Icon,Row,Col, Drawer} from 'antd' 
 import { Responsive, Segment } from 'semantic-ui-react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 class Nav extends Component {
@@ -27,10 +33,10 @@ class Nav extends Component {
                             <img style={{maxWidth:150}} src={logo} alt={logo} />
                         </div>
                         <ul className="navLinks">
-                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">Home</a></li>
-                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">About</a></li> 
-                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">FAQ</a></li>
-                            <li><a style={{color:`rgba(${this.props.color})`}} href="#">Contact</a></li>
+                            <li> <Link  style={{color:`rgba(${this.props.color})`}} to="/">Home</Link></li>
+                            <li><Link  style={{color:`rgba(${this.props.color})`}} to="/about">About</Link></li> 
+                            <li><Link style={{color:`rgba(${this.props.color})`}} to="/faq">FAQ</Link></li>
+                            <li><Link style={{color:`rgba(${this.props.color})`}} to="#">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -114,7 +120,7 @@ class Nav extends Component {
                         </a>
                       </li>
                       <li style={{listStyle:"none",height:"7vh" }}>
-                        <a  href="#"
+                        <a  href="/"
                             style={{
                               display:"flex", 
                               flexDirection:"row",
@@ -127,7 +133,7 @@ class Nav extends Component {
                         </a>
                       </li>
                       <li style={{listStyle:"none",height:"7vh" }}>
-                        <a  href="#"
+                        <a  href="/about"
                             style={{
                               display:"flex", 
                               flexDirection:"row",
@@ -140,7 +146,7 @@ class Nav extends Component {
                         </a>
                       </li>
                       <li style={{listStyle:"none",height:"7vh" }}>
-                        <a  href="#"
+                        <a  href="/privacy-policy"
                             style={{
                               display:"flex", 
                               flexDirection:"row",
@@ -152,7 +158,35 @@ class Nav extends Component {
                               </p>
                         </a>
                       </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="/safety-tips"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="file-protect" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Safety Tips
+                              </p>
+                        </a>
+                      </li>
+                      <li style={{listStyle:"none",height:"7vh" }}>
+                        <a  href="/Terms&agreement"
+                            style={{
+                              display:"flex", 
+                              flexDirection:"row",
+                              alignItems:"center",
+                              fontSize:20}}>
+                              <Icon type="audit" />
+                              <p style={{color:"#000", marginLeft:20}}>
+                                Terms And Agreement
+                              </p>
+                        </a>
+                      </li>
               </Drawer>
+              {/* safety-tips */}
+              {/* Terms&agreement */}
             </div>
          );
     }
