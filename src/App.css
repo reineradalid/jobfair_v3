@@ -99,8 +99,33 @@
 .icon{
   max-width: 35px;
 }
+.privacy-policy-container{
+  width: 60vw;
+
+}
+.privacy-policy-container P{
+ font-size: 15PX;
+  
+}
+.safetips-container{
+  width: 60vw;
+}
+.safetips-container P{
+  font-size: 15PX;
+   
+ }
 
 @media only screen and (max-width:768px) {
+  .privacy-policy-container{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .safetips-container{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
  .icon{
    max-width: 30px;
  }
@@ -137,7 +162,6 @@
  
 }
 @media only screen and (max-width: 1024px) and (min-width: 800px) {
-
   .CounterContainer{
       height:25vh;
       justify-content: center;
