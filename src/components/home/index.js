@@ -6,7 +6,7 @@ import HowItWorks from './howitWorks'
 import Footer from '../common/footer/index'
 import { Layout } from 'antd';
 
-const { Header, Sider, Content } = Layout;
+const { Header } = Layout;
 class Home extends Component {
     state = {
         color: '0,0,0,0',
@@ -20,16 +20,13 @@ class Home extends Component {
           this.setState({color: '0,0,0,0',textcolor: '255,255,255',burger:"255,255,255"})
         }
       }
-    
       componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent)
       }
     render() { 
         return ( 
             <Layout>
-               
                 <div
-                
                  style={{
                     backgroundPosition:"center",
                     backgroundSize:"cover",
