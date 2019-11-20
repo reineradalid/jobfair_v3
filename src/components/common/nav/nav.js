@@ -29,8 +29,8 @@ class Nav extends Component {
                         <a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:150}} src={logo} alt={logo} /></a>
                         </div>
                         <ul className="navLinks">
-                            <li> <Link  style={{color:`rgba(${this.props.color})`}} to="/">Home</Link></li>
-                            <li><Link  style={{color:`rgba(${this.props.color})`}} to="/about">About</Link></li> 
+                            <li> <a  style={{color:`rgba(${this.props.color})`}} href="/">Home</a></li>
+                            <li><a  style={{color:`rgba(${this.props.color})`}} href="/about">About</a></li> 
                             {/* <li><Link style={{color:`rgba(${this.props.color})`}} to="/faq">FAQ</Link></li> */}
                             <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com/contactus">Contact</a></li>
                             <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com"><span style={{color:"#f26725", fontWeight:"bold"}}>Job</span>Stream</a></li>

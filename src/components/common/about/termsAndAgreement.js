@@ -3,7 +3,7 @@ import Nav from '../nav/nav'
 import { Layout } from 'antd';
 import FootContainer from '../footer/index'
 
-const { Header } = Layout;
+const { Header } = Layout;                                 
 
 class Terms extends Component {
     state = {
