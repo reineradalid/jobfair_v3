@@ -36,7 +36,7 @@ class Nav extends Component {
                         <ul className="navLinks">
                             <li> <Link  style={{color:`rgba(${this.props.color})`}} to="/">Home</Link></li>
                             <li><Link  style={{color:`rgba(${this.props.color})`}} to="/about">About</Link></li> 
-                            <li><Link style={{color:`rgba(${this.props.color})`}} to="/faq">FAQ</Link></li>
+                            {/* <li><Link style={{color:`rgba(${this.props.color})`}} to="/faq">FAQ</Link></li> */}
                             <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com/contactus">Contact</a></li>
                             <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com"><span style={{color:"#f26725"}}>Job</span>Stream</a></li>
                         </ul>
@@ -185,7 +185,7 @@ class Nav extends Component {
                               </p>
                         </a>
                       </li>
-                      <li style={{listStyle:"none",height:"7vh" }}>
+                      {/* <li style={{listStyle:"none",height:"7vh" }}>
                         <a  href="/faq"
                             style={{
                               display:"flex", 
@@ -197,7 +197,7 @@ class Nav extends Component {
                                 FAQ
                               </p>
                         </a>
-                      </li>
+                      </li> */}
                       <li style={{listStyle:"none",height:"7vh" }}>
                         <a  href="/safety-tips"
                             style={{
