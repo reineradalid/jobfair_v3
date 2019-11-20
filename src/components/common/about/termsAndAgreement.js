@@ -211,7 +211,7 @@ class Terms extends Component {
                                             </li>
                                             <br/>
                                             <li style={{margin:"0cm",marginBottom:".0001pt",textAlign:"justify", fontSize:"16px"}}>
-                                                in the event social media features  are provided with respect to certain content on the Service, you may take such actions as the Service permits for such features.  
+                                                in the event social media features are provided with respect to certain content on the Service, you may take such actions as the Service permits for such features.  
                                             </li>
                                             
                                         </ol>

@@ -3,7 +3,7 @@ import { Row, Col } from 'antd'
 class Counter extends Component {
     render() { 
         return ( 
-            <div className="CounterContainer">
+            <div style={{color:"#f26725"}} className="CounterContainer">
                 <Row type="flex" justify="center" align="top" style={{ width:"100%"}}  gutter={8}>
                     <Col id="next-cont" align="center" xl={{span:5, pull:1}}   style={{margin:15}} >
                         <div style={{width:"100%",justifyContent:'center', alignItems:"center"}}>

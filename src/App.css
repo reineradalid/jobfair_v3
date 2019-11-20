@@ -1,4 +1,8 @@
 @import '~antd/dist/antd.css';
+*{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 .App {
   text-align: center;
 }
@@ -94,7 +98,7 @@
   width: 600px;
 }
 .header-cntn{
-  min-height: 75vh;
+  min-height: 100vh;
 }
 .icon{
   max-width: 35px;
@@ -131,7 +135,8 @@
    max-width: 30px;
  }
   .CounterContainer{
-    height:25vh;
+    margin-top: 40px;
+    height:20vh;
       justify-content: center;
       display: flex;   
   }
@@ -152,7 +157,6 @@
   }
   .CounterContainer{
     height:50vh;
-         
   }
   .header-cntn{
     min-height: 100vh !important;

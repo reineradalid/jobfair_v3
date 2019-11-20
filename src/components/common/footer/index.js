@@ -17,11 +17,11 @@ class FootContainer extends Component {
                         <div align="center">
                             <span style={{color:"#fff"}} className="footer-links">
                                 <a href="/about">About </a>
-                                 . 
+                                 | 
                                 <a href="/Terms&agreement"> Terms and agreement </a> 
-                                 . 
+                                 | 
                                 <a href="/privacy-policy"> Privacy policy </a>
-                                 .  
+                                 |  
                                 <a href="/safety-tips"> Safety tips </a>
                             </span>
                             <h3 style={{color:"#fff"}} >Follow us:</h3>

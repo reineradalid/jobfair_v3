@@ -18,7 +18,7 @@ class Nav extends Component {
       }
     render() { 
         return ( 
-            <div style={{marginBottom:20}} >
+            <div style={{marginBottom:15}} >
                <Responsive  {...Responsive.onlyComputer}>
                <div>
                     <div className="nav-btn" align="right" style={{display:"flex", flexDirection:"row-reverse",paddingTop:6, fontWeight:"bold"}}>
@@ -38,7 +38,7 @@ class Nav extends Component {
                             <li><Link  style={{color:`rgba(${this.props.color})`}} to="/about">About</Link></li> 
                             {/* <li><Link style={{color:`rgba(${this.props.color})`}} to="/faq">FAQ</Link></li> */}
                             <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com/contactus">Contact</a></li>
-                            <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com"><span style={{color:"#f26725"}}>Job</span>Stream</a></li>
+                            <li><a style={{color:`rgba(${this.props.color})`}} href="https://www.jobstreamapp.com"><span style={{color:"#f26725", fontWeight:"bold"}}>Job</span>Stream</a></li>
                         </ul>
                     </div>
                 </div>

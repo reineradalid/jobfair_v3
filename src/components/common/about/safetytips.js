@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../nav/nav'
-import { Layout } from 'antd';
+import { Layout ,Icon} from 'antd';
 import { Responsive } from 'semantic-ui-react';
 import FootContainer from '../footer/index'
 
@@ -32,7 +32,10 @@ class SafetyTips extends Component {
                 </Header>
                 <div align="center">
                     <div className="safetips-container"  align="left" style={{borderTop:"1px solid #dcdcdc", minHeight:"120vh", paddingTop:"20vh" }}>
-                        <h1>Safety Tips</h1>
+                    
+                           
+                        <h1><Icon type="bulb" theme="twoTone" />  Safety Tips</h1>
+                      
                        <p>The safety of our users is very important to us. There are steps that everyone can follow to ensure their safety while using JobStream. Please take a few minutes to read these tips.</p>
                         <strong><p>Keep your financial information private </p></strong>
                         <br/>

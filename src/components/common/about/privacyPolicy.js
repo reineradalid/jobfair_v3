@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../nav/nav'
-import { Layout } from 'antd';
+import { Layout ,Icon} from 'antd';
 import { Responsive } from 'semantic-ui-react';
 import FootContainer from '../footer/index'
 
@@ -42,7 +42,7 @@ class PrivacyPolicy extends Component {
                 </Header>
                 <div align="center">
                     <div className="privacy-policy-container" align="left" style={{borderTop:"1px solid #dcdcdc", minHeight:"120vh", paddingTop:"20vh" }}>
-                       <h1>Privacy Policy</h1>
+                       <h1><Icon type="safety-certificate" theme="twoTone" /> Privacy Policy</h1>
                        <p>Last Updated: August, 2018</p>
                        <p>JobStream App Corporation
                             (<strong>“JobStream,” “we,”</strong> and <strong>“us”</strong>) 

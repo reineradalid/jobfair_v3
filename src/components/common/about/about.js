@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../nav/nav'
-import { Layout } from 'antd';
+import { Layout,Icon } from 'antd';
 import { Responsive } from 'semantic-ui-react';
 import FootContainer from '../footer/index'
 
@@ -32,7 +32,7 @@ class About extends Component {
                 </Header>
                 <div align="center">
                     <div className="privacy-policy-container" align="left" style={{borderTop:"1px solid #dcdcdc", minHeight:"120vh", paddingTop:"20vh" }}>
-                    <h1>About</h1>
+                    <h1><Icon type="exclamation-circle" theme="twoTone" /> About</h1>
 
 
                       <br/><br/>
