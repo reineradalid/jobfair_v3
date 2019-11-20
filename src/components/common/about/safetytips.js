@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import Nav from '../nav/nav'
 import { Layout ,Icon} from 'antd';
-import { Responsive } from 'semantic-ui-react';
 import FootContainer from '../footer/index'
 
-const { Header, Sider, Content } = Layout;
+const { Header } = Layout;
 
 class SafetyTips extends Component {
     state = {

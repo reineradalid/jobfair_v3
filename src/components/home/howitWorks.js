@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import {Row,Col,Steps, Popover} from 'antd'
+import {Row,Col} from 'antd'
 import Signup from '../../assets/image/Signup.mp4'
 
-import { Responsive, Segment } from 'semantic-ui-react'
+import { Responsive } from 'semantic-ui-react'
 class HowItWorks extends Component {
     render() { 
         return ( 

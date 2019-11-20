@@ -2,13 +2,8 @@ import React, { Component } from 'react'
 import logo from '../../../assets/image/logo.png'
 import logo2 from '../../../assets/image/Icon-design-registered.png'
 import {Modal, Icon,Row,Col, Drawer} from 'antd' 
-import { Responsive, Segment } from 'semantic-ui-react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Responsive } from 'semantic-ui-react'
+import { BrowserRouter as  Link } from "react-router-dom";
 
 
 class Nav extends Component {

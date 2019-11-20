@@ -7,9 +7,6 @@ import Terms from './components/common/about/termsAndAgreement'
 import FAQ from './components/common/about/faq'
 import About from './components/common/about/about'
 import { BrowserRouter, Route, Link, Router,Switch } from "react-router-dom";
- 
-// using CommonJS modules
-
 
 function App() {
   return (

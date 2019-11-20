@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-
 class CopyRight extends Component {
     render() { 
         return ( 
@@ -10,5 +8,4 @@ class CopyRight extends Component {
          );
     }
 }
- 
 export default CopyRight;

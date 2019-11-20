@@ -4,7 +4,7 @@ import { Layout ,Icon} from 'antd';
 import { Responsive } from 'semantic-ui-react';
 import FootContainer from '../footer/index'
 
-const { Header, Sider, Content } = Layout;
+const { Header } = Layout;
 
 class PrivacyPolicy extends Component {
     state = {
@@ -12,17 +12,7 @@ class PrivacyPolicy extends Component {
         textcolor: '55, 124, 204',
         burger:'136,136,136'
       }
-    // listenScrollEvent = e => {
-    //     if (window.scrollY > 150) {
-    //       this.setState({color: '255,255,255,0.5', textcolor:'55, 124, 204',burger:"136,136,136"})
-    //     } else {
-    //       this.setState({color: '0,0,0,0',textcolor: '255,255,255',burger:"255,255,255"})
-    //     }
-    //   }
     
-    //   componentDidMount() {
-    //     window.addEventListener('scroll', this.listenScrollEvent)
-    //   }
     render() { 
         return ( 
             <Layout >

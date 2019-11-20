@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import {Row, Col} from 'antd'
 import fb from '../../../assets/image/Facebook.png'
 import ig from '../../../assets/image/InstaLogo.png'
 import In from '../../../assets/image/LinkedIn.png'
 import twt from '../../../assets/image/twitter.png'
 import CopyRight from './components/copyright'
 
-import { Responsive, Segment } from 'semantic-ui-react'
+import { Responsive } from 'semantic-ui-react'
 class FootContainer extends Component {
    
     render() { 
@@ -43,7 +42,6 @@ class FootContainer extends Component {
                        
                     </div>
                 </Responsive>
-
 
                 <Responsive  {...Responsive.onlyTablet}>
                 <div style={{backgroundColor:"#377ccc", padding:20}}>
@@ -95,6 +93,5 @@ class FootContainer extends Component {
          );
     }
 }
- 
 export default FootContainer;
 
