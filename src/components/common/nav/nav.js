@@ -85,7 +85,7 @@ class Nav extends Component {
                 <Drawer
                     title={<a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:200,}} src={logo} alt={logo} /> </a>}
                     placement="left"
-                    closable={false}
+                    closable={true}
                     onClose={()=>this.setState({drawerVisible:false})}
                     visible={this.state.drawerVisible}
                   >
@@ -95,8 +95,8 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
-                             <img style={{maxWidth:20}} src={logo2} alt={logo2} />
+                              fontSize:15}}>
+                             <img style={{maxWidth:12}} src={logo2} alt={logo2} />
                               <p style={{color:"rgba(55, 124, 204)", marginLeft:20, fontWeight:"bold"}}>
                               <span style={{color:"#f26725"}}>Job</span>Stream
                               </p>
@@ -108,9 +108,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="user"/>
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Login
                               </p>
                         </a>
@@ -121,9 +121,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="user-add"  />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Sign Up
                               </p>
                         </a>
@@ -134,9 +134,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="home" theme="filled" />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Home
                               </p>
                         </a>
@@ -147,9 +147,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="info-circle" theme="filled" />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 About
                               </p>
                         </a>
@@ -160,9 +160,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="safety-certificate" theme="filled" />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Privacy Policy
                               </p>
                         </a>
@@ -173,9 +173,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="phone" theme="filled" />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Contact Us
                               </p>
                         </a>
@@ -199,9 +199,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="file-protect" />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Safety Tips
                               </p>
                         </a>
@@ -212,9 +212,9 @@ class Nav extends Component {
                               display:"flex", 
                               flexDirection:"row",
                               alignItems:"center",
-                              fontSize:20}}>
+                              fontSize:15}}>
                               <Icon type="audit" />
-                              <p style={{color:"#000", marginLeft:20}}>
+                              <p style={{color:"#000", marginLeft:15}}>
                                 Terms And Agreement
                               </p>
                         </a>

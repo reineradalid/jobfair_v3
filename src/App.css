@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 *{
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: Roboto,Arial,sans-serif !important;
+  /* font-family: 'Montserrat', sans-serif !important; */
 }
 
 .App {
