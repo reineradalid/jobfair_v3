@@ -16,14 +16,14 @@ class Nav extends Component {
             <div style={{marginBottom:15}} >
                <Responsive  {...Responsive.onlyComputer}>
                <div>
-                    <div className="nav-btn" align="right" style={{display:"flex", flexDirection:"row-reverse",paddingTop:6, fontWeight:"bold"}}>
+                    {/* <div className="nav-btn" align="right" style={{display:"flex", flexDirection:"row-reverse",paddingTop:6, fontWeight:"bold"}}>
                       <a role="button" onClick={()=>this.setState({visble:true})} style={{color:"#fff",margin:6, backgroundColor:"#f26725", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
                             LOGIN
                         </a>
                         <a href="https://www.jobstreamapp.com/signup" role="button" style={{color:"#fff",margin:6, backgroundColor:"#f26725", width:100, height:38,display:"flex", justifyContent:'center', alignItems:'center'}}>
                            SIGN UP
                         </a>
-                    </div >
+                    </div > */}
                     <div className="navContainer" style={{display:"flex", flexDirection:"row", paddingTop:10}}>
                         <div>
                         <a href="https://www.jobstreamapp.com/"> <img style={{maxWidth:150}} src={logo} alt={logo} /></a>
